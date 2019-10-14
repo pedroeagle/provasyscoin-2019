@@ -9,9 +9,16 @@ php -S localhost:5000
 ```
 A porta 5000 pode ser substituída por outro valor que não esteja em utilização.
 
-# Para testar
+# Para testar localmente
 Para testar basta abrir o localhost:5000. Caso sejam passadas as credenciais user="syscoin" e password="meEscolhe" da seguinte forma: 
 ```
-http://localhost:5000/?user="syscoin"&password="meEscolhe"
+http://localhost:5000/provasyscoin?user="syscoin"&password="meEscolhe"
+```
+será retornado um Json com uma mensagem informando meu nome. Caso as credenciais não estejam presentes ou as credenciais não estejam corretas será retornada uma mensagem de erro por meio de um Json.
+
+# Para testar remotamente
+Foi feito o deploy da api no seguinte link: https://provasyscoin-pedroigor.herokuapp.com/ e caso sejam passadas as credenciais user="syscoin" e password="meEscolhe" da seguinte forma: 
+```
+https://provasyscoin-pedroigor.herokuapp.com/provasyscoin?user="syscoin"&password="meEscolhe"
 ```
 será retornado um Json com uma mensagem informando meu nome. Caso as credenciais não estejam presentes ou as credenciais não estejam corretas será retornada uma mensagem de erro por meio de um Json.
